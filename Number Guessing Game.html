@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="head">WELCOME TO NUMBER GUESSING GAME</h1>
+
+<div id="guess">
+    Guess left : 15
+</div>
+
+<p id="h2">What level do you wanna play this game?? </p> 
+<!-- 1.Easy (Number range 0 to 100 and Max Guess 15)
+2.Medium (Number range 0 to 1000 and Max Guess 10) 
+3.Hard (Number range 0 to 9000 and Max Guess 5) 
+4.Insane Hard (Number range 0 to 90000 and Max Guess 3) -->
+<div class="btnlv">
+<button onclick="getLv(1)"> Easy </button> <br>
+<button onclick="getLv(2)"> Medium</button> <br>
+<button onclick="getLv(3)"> Hard </button> <br>
+<!-- <button onclick="getLv(4)"> Insane Hard </button> <br> -->
+<br>
+</div>
+
+<div id="hint">
+    Hints: The number is between 0 to 100
+</div>
+<br>
+<div id="guessform">
+<input id="inputfield" type="number" placeholder="put your guess number">
+<br>    <br>
+    <input class="submit" type="submit" onclick="checkGuess()">
+<br>
+</div>
+
+<button class="ref" id="btnRefresh"> Play again </button>
+<script src="logic.js"></script>
+</body>
+</html>

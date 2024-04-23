@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulation</title>
+    <link rel="stylesheet" href="cong.css">
+</head>
+<body>
+    <h1 id="head">Congratulation You guessed the number!!!!! YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA </h1>
+
+    <h4> So the number is </h4>
+
+    <button id="goback"> Play Again</button>
+    <script>
+        // const { fnum } = require('./logic.js');
+        // Get data from localStorage
+        // var data = localStorage.getItem('myVariable');
+        // Display the data
+        // var urlParams = new URLSearchParams(window.location.search);
+        // var receivedData = urlParams.get('data');
+        // import data from './logic.js';
+        // include ('logic.js');
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById("goback").addEventListener("click",function(){
+                window.location.href = "Number Guessing Game.html";
+            })
+        });
+    </script>
+</body>
+</html>
