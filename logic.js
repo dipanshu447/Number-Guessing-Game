@@ -62,14 +62,15 @@ document.getElementById("guessform").addEventListener("submit",function(event){
 
  function checkGuess() {
      fnum = parseInt(document.getElementById("inputfield").value);
-     let G = MAX_GUESS;
-     chg_Guess = --G;
+    //  let G = MAX_GUESS;
+    //  chg_Guess = --G;
+        chg_Guess = --MAX_GUESS;
      changeGuess(chg_Guess);
 
-     if(num == fnum && MAX_GUESS == chg_Guess){
-        window.location.href = "cong.html";
-        return;
-     }
+    //  if(num == fnum && MAX_GUESS == chg_Guess){
+    //     window.location.href = "cong.html";
+    //     return;
+    //  }
     
     if (num == fnum) {   
         head.innerHTML = "Congratulation You guessed the number!!!!!";
